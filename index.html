@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding LAB</title>
+    <style>
+
+        div
+        {
+            margin-top: 250px;
+            margin-left: 520px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input
+        {
+            margin-left: 550px;
+            height: 60px;
+            width: 260px;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>Computer LAB</div>
+    <input type="text">
+    <script>
+        let text = document.querySelector("div");
+        input = document.querySelector("input");
+
+        input.addEventListener("input", () =>{
+            text.style.color = input.value;
+            input.style.backgroundColor = input.value;
+            text.style.fontSize = input.value;
+            text.style.fontFamily = input.value;
+        });
+
+    </script>
+</body>
+</html>
